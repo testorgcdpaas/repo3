@@ -1,0 +1,175 @@
+2022-05-13 09:34:27 [32mINFO[m i.a.w.w.WorkerRun(call):49 - Executing worker wrapper. Airbyte version: 0.35.31-alpha
+2022-05-13 09:34:27 [32mINFO[m i.a.w.t.TemporalAttemptExecution(get):107 - Cloud storage job log path: /workspace/29349/0/logs.log
+2022-05-13 09:34:30 [43mdestination[0m > SLF4J: Class path contains multiple SLF4J bindings.
+2022-05-13 09:34:30 [43mdestination[0m > SLF4J: Found binding in [jar:file:/airbyte/lib/log4j-slf4j-impl-2.17.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+2022-05-13 09:35:04 [32mINFO[m i.a.v.j.JsonSchemaValidator(test):56 - JSON schema validation failed. 
+errors: $.access_token: is missing but it is required, $.option_title: must be a constant value OAuth Credentials
+2022-05-13 09:35:04 [32mINFO[m i.a.v.j.JsonSchemaValidator(test):56 - JSON schema validation failed. 
+errors: $.compression_codec: is missing but it is required, $.format_type: does not have a value in the enumeration [Avro]
+2022-05-13 09:34:27 [32mINFO[m i.a.w.t.TemporalAttemptExecution(get):110 - Executing worker wrapper. Airbyte version: 0.35.31-alpha
+2022-05-13 09:34:27 [32mINFO[m i.a.w.DefaultReplicationWorker(run):103 - start sync worker. job id: 29349 attempt id: 0
+2022-05-13 09:34:27 [32mINFO[m i.a.w.DefaultReplicationWorker(run):115 - configured sync modes: {null.issue_labels=full_refresh - append}
+2022-05-13 09:34:27 [32mINFO[m i.a.w.p.a.DefaultAirbyteDestination(start):69 - Running destination...
+2022-05-13 09:34:27 [32mINFO[m i.a.w.p.KubeProcessFactory(create):111 - Attempting to start pod = destination-s3-sync-29349-0-hcjyv
+2022-05-13 09:34:27 [32mINFO[m i.a.w.p.KubeProcessFactory(create):114 - destination-s3-sync-29349-0-hcjyv stdoutLocalPort = 9024
+2022-05-13 09:34:27 [32mINFO[m i.a.w.p.KubeProcessFactory(create):117 - destination-s3-sync-29349-0-hcjyv stderrLocalPort = 9025
+2022-05-13 09:34:27 [32mINFO[m i.a.w.p.KubePodProcess(lambda$setupStdOutAndStdErrListeners$8):521 - Creating stdout socket server...
+2022-05-13 09:34:27 [32mINFO[m i.a.w.p.KubePodProcess(lambda$setupStdOutAndStdErrListeners$9):532 - Creating stderr socket server...
+2022-05-13 09:34:27 [32mINFO[m i.a.w.p.KubePodProcess(<init>):480 - Creating pod...
+2022-05-13 09:34:27 [32mINFO[m i.a.w.p.KubePodProcess(waitForInitPodToRun):290 - Waiting for init container to be ready before copying files...
+2022-05-13 09:34:27 [32mINFO[m i.a.w.p.KubePodProcess(waitForInitPodToRun):293 - Init container present..
+2022-05-13 09:34:28 [32mINFO[m i.a.w.p.KubePodProcess(waitForInitPodToRun):296 - Init container ready..
+2022-05-13 09:34:28 [32mINFO[m i.a.w.p.KubePodProcess(<init>):485 - Copying files...
+2022-05-13 09:34:28 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):240 - Uploading file: destination_config.json
+2022-05-13 09:34:28 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):248 - kubectl cp /tmp/f6369de9-1037-41c7-9d93-8c97934a50c0/destination_config.json dev/destination-s3-sync-29349-0-hcjyv:/config/destination_config.json -c init
+2022-05-13 09:34:28 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):251 - Waiting for kubectl cp to complete
+2022-05-13 09:34:28 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):265 - kubectl cp complete, closing process
+2022-05-13 09:34:28 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):240 - Uploading file: destination_catalog.json
+2022-05-13 09:34:28 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):248 - kubectl cp /tmp/97ed4af4-75c5-46ab-b4a7-4e447a0a86a0/destination_catalog.json dev/destination-s3-sync-29349-0-hcjyv:/config/destination_catalog.json -c init
+2022-05-13 09:34:28 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):251 - Waiting for kubectl cp to complete
+2022-05-13 09:34:29 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):265 - kubectl cp complete, closing process
+2022-05-13 09:34:29 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):240 - Uploading file: FINISHED_UPLOADING
+2022-05-13 09:34:29 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):248 - kubectl cp /tmp/72af8a86-0afe-4b4b-8413-1d3e9d9f9905/FINISHED_UPLOADING dev/destination-s3-sync-29349-0-hcjyv:/config/FINISHED_UPLOADING -c init
+2022-05-13 09:34:29 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):251 - Waiting for kubectl cp to complete
+2022-05-13 09:34:29 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):265 - kubectl cp complete, closing process
+2022-05-13 09:34:29 [32mINFO[m i.a.w.p.KubePodProcess(<init>):488 - Waiting until pod is ready...
+2022-05-13 09:34:29 [32mINFO[m i.a.w.p.KubePodProcess(lambda$setupStdOutAndStdErrListeners$8):523 - Setting stdout...
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubePodProcess(lambda$setupStdOutAndStdErrListeners$9):534 - Setting stderr...
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubePodProcess(<init>):502 - Reading pod IP...
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubePodProcess(<init>):504 - Pod IP: 10.0.4.239
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubePodProcess(<init>):507 - Creating stdin socket...
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubeProcessFactory(create):111 - Attempting to start pod = source-github-sync-29349-0-ytqmk
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubeProcessFactory(create):114 - source-github-sync-29349-0-ytqmk stdoutLocalPort = 9030
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubeProcessFactory(create):117 - source-github-sync-29349-0-ytqmk stderrLocalPort = 9031
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubePodProcess(lambda$setupStdOutAndStdErrListeners$8):521 - Creating stdout socket server...
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubePodProcess(lambda$setupStdOutAndStdErrListeners$9):532 - Creating stderr socket server...
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubePodProcess(<init>):480 - Creating pod...
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubePodProcess(waitForInitPodToRun):290 - Waiting for init container to be ready before copying files...
+2022-05-13 09:34:30 [32mINFO[m i.a.w.p.KubePodProcess(waitForInitPodToRun):293 - Init container present..
+2022-05-13 09:34:31 [32mINFO[m i.a.w.p.KubePodProcess(waitForInitPodToRun):296 - Init container ready..
+2022-05-13 09:34:31 [32mINFO[m i.a.w.p.KubePodProcess(<init>):485 - Copying files...
+2022-05-13 09:34:31 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):240 - Uploading file: source_config.json
+2022-05-13 09:34:31 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):248 - kubectl cp /tmp/474fb749-49a5-4c68-a498-fe59c1486a1a/source_config.json dev/source-github-sync-29349-0-ytqmk:/config/source_config.json -c init
+2022-05-13 09:34:31 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):251 - Waiting for kubectl cp to complete
+2022-05-13 09:34:31 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):265 - kubectl cp complete, closing process
+2022-05-13 09:34:31 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):240 - Uploading file: source_catalog.json
+2022-05-13 09:34:31 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):248 - kubectl cp /tmp/d682b976-c1b0-4b64-b996-d3d169c8d17c/source_catalog.json dev/source-github-sync-29349-0-ytqmk:/config/source_catalog.json -c init
+2022-05-13 09:34:31 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):251 - Waiting for kubectl cp to complete
+2022-05-13 09:34:32 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):265 - kubectl cp complete, closing process
+2022-05-13 09:34:32 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):240 - Uploading file: FINISHED_UPLOADING
+2022-05-13 09:34:32 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):248 - kubectl cp /tmp/cc1a9265-3872-47ab-a6b7-41201047a7a6/FINISHED_UPLOADING dev/source-github-sync-29349-0-ytqmk:/config/FINISHED_UPLOADING -c init
+2022-05-13 09:34:32 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):251 - Waiting for kubectl cp to complete
+2022-05-13 09:34:32 [32mINFO[m i.a.w.p.KubePodProcess(copyFilesToKubeConfigVolume):265 - kubectl cp complete, closing process
+2022-05-13 09:34:32 [32mINFO[m i.a.w.p.KubePodProcess(<init>):488 - Waiting until pod is ready...
+2022-05-13 09:34:32 [32mINFO[m i.a.w.p.KubePodProcess(lambda$setupStdOutAndStdErrListeners$8):523 - Setting stdout...
+2022-05-13 09:34:33 [32mINFO[m i.a.w.p.KubePodProcess(lambda$setupStdOutAndStdErrListeners$9):534 - Setting stderr...
+2022-05-13 09:34:33 [32mINFO[m i.a.w.p.KubePodProcess(<init>):502 - Reading pod IP...
+2022-05-13 09:34:33 [32mINFO[m i.a.w.p.KubePodProcess(<init>):504 - Pod IP: 10.0.4.226
+2022-05-13 09:34:33 [32mINFO[m i.a.w.p.KubePodProcess(<init>):511 - Using null stdin output stream...
+2022-05-13 09:34:33 [32mINFO[m i.a.w.DefaultReplicationWorker(run):157 - Waiting for source and destination threads to complete.
+2022-05-13 09:34:33 [32mINFO[m i.a.w.DefaultReplicationWorker(lambda$getDestinationOutputRunnable$6):338 - Destination output thread started.
+2022-05-13 09:34:33 [32mINFO[m i.a.w.DefaultReplicationWorker(lambda$getReplicationRunnable$5):278 - Replication thread started.
+2022-05-13 09:34:33 [32mINFO[m i.a.w.p.KubePodProcess(getReturnCode):696 - Exit code for pod source-github-sync-29349-0-ytqmk is 0
+2022-05-13 09:34:33 [32mINFO[m i.a.w.p.KubePodProcess(exitValue):711 - Closed all resources for pod source-github-sync-29349-0-ytqmk
+2022-05-13 09:34:33 [32mINFO[m i.a.w.DefaultReplicationWorker(lambda$getReplicationRunnable$5):304 - Total records read: 9
+2022-05-13 09:34:33 [32mINFO[m i.a.w.p.KubePodProcess(exitValue):711 - Closed all resources for pod source-github-sync-29349-0-ytqmk
+2022-05-13 09:34:33 [32mINFO[m i.a.w.p.KubePodProcess(exitValue):711 - Closed all resources for pod source-github-sync-29349-0-ytqmk
+2022-05-13 09:34:33 [32mINFO[m i.a.w.DefaultReplicationWorker(run):162 - One of source or destination thread complete. Waiting on the other.
+2022-05-13 09:34:34 [32mINFO[m i.a.v.j.JsonSchemaValidator(test):56 - JSON schema validation failed. 
+errors: $: null found, object expected
+2022-05-13 09:34:34 [1;31mERROR[m i.a.w.p.a.DefaultAirbyteStreamFactory(lambda$create$1):70 - Validation failed: null
+2022-05-13 09:35:04 [32mINFO[m i.a.w.p.KubePodProcess(exitValue):711 - Closed all resources for pod source-github-sync-29349-0-ytqmk
+2022-05-13 09:35:04 [32mINFO[m i.a.w.p.KubePodProcess(exitValue):711 - Closed all resources for pod source-github-sync-29349-0-ytqmk
+2022-05-13 09:35:04 [32mINFO[m i.a.w.p.KubePodProcess(exitValue):711 - Closed all resources for pod source-github-sync-29349-0-ytqmk
+2022-05-13 09:35:04 [32mINFO[m i.a.w.p.KubePodProcess(exitValue):711 - Closed all resources for pod source-github-sync-29349-0-ytqmk
+2022-05-13 09:35:04 [1;31mERROR[m i.a.w.DefaultReplicationWorker(run):168 - Sync worker failed.
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: java.lang.RuntimeException: Cannot find pod while trying to retrieve exit code. This probably means the Pod was not correctly created.
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073) ~[?:?]
+	at io.airbyte.workers.DefaultReplicationWorker.run(DefaultReplicationWorker.java:163) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+	at io.airbyte.workers.DefaultReplicationWorker.run(DefaultReplicationWorker.java:56) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+	at io.airbyte.workers.temporal.TemporalAttemptExecution.lambda$getWorkerThread$2(TemporalAttemptExecution.java:155) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+	Suppressed: java.lang.RuntimeException: Cannot find pod while trying to retrieve exit code. This probably means the Pod was not correctly created.
+		at io.airbyte.workers.process.KubePodProcess.getReturnCode(KubePodProcess.java:677) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+		at io.airbyte.workers.process.KubePodProcess.exitValue(KubePodProcess.java:704) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+		at java.lang.Process.hasExited(Process.java:584) ~[?:?]
+		at java.lang.Process.isAlive(Process.java:574) ~[?:?]
+		at io.airbyte.workers.WorkerUtils.gentleClose(WorkerUtils.java:36) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+		at io.airbyte.workers.protocols.airbyte.DefaultAirbyteDestination.close(DefaultAirbyteDestination.java:115) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+		at io.airbyte.workers.DefaultReplicationWorker.run(DefaultReplicationWorker.java:125) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+		at io.airbyte.workers.DefaultReplicationWorker.run(DefaultReplicationWorker.java:56) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+		at io.airbyte.workers.temporal.TemporalAttemptExecution.lambda$getWorkerThread$2(TemporalAttemptExecution.java:155) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+		at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: Cannot find pod while trying to retrieve exit code. This probably means the Pod was not correctly created.
+	at io.airbyte.workers.DefaultReplicationWorker.lambda$getDestinationOutputRunnable$6(DefaultReplicationWorker.java:366) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot find pod while trying to retrieve exit code. This probably means the Pod was not correctly created.
+	at io.airbyte.workers.process.KubePodProcess.getReturnCode(KubePodProcess.java:677) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+	at io.airbyte.workers.process.KubePodProcess.exitValue(KubePodProcess.java:704) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+	at java.lang.Process.hasExited(Process.java:584) ~[?:?]
+	at java.lang.Process.isAlive(Process.java:574) ~[?:?]
+	at io.airbyte.workers.protocols.airbyte.DefaultAirbyteDestination.isFinished(DefaultAirbyteDestination.java:146) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+	at io.airbyte.workers.DefaultReplicationWorker.lambda$getDestinationOutputRunnable$6(DefaultReplicationWorker.java:340) ~[io.airbyte-airbyte-workers-0.35.31-alpha.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	... 1 more
+2022-05-13 09:35:04 [32mINFO[m i.a.w.DefaultReplicationWorker(run):227 - sync summary: io.airbyte.config.ReplicationAttemptSummary@64ee5c7c[status=failed,recordsSynced=9,bytesSynced=2300,startTime=1652434467321,endTime=1652434504505,totalStats=io.airbyte.config.SyncStats@2c355709[recordsEmitted=9,bytesEmitted=2300,stateMessagesEmitted=0,recordsCommitted=0],streamStats=[io.airbyte.config.StreamSyncStats@183ab78f[streamName=issue_labels,stats=io.airbyte.config.SyncStats@4418ce88[recordsEmitted=9,bytesEmitted=2300,stateMessagesEmitted=<null>,recordsCommitted=<null>]]]]
+2022-05-13 09:35:04 [32mINFO[m i.a.w.DefaultReplicationWorker(run):249 - Source did not output any state messages
+2022-05-13 09:35:04 [33mWARN[m i.a.w.DefaultReplicationWorker(run):260 - State capture: No state retained.
+2022-05-13 09:35:04 [32mINFO[m i.a.w.t.TemporalAttemptExecution(get):131 - Stopping cancellation check scheduling...
+2022-05-13 09:35:04 [32mINFO[m i.a.w.t.s.ReplicationActivityImpl(lambda$replicate$1):144 - sync summary: io.airbyte.config.StandardSyncOutput@79e07ddc[standardSyncSummary=io.airbyte.config.StandardSyncSummary@5b336d01[status=failed,recordsSynced=9,bytesSynced=2300,startTime=1652434467321,endTime=1652434504505,totalStats=io.airbyte.config.SyncStats@2c355709[recordsEmitted=9,bytesEmitted=2300,stateMessagesEmitted=0,recordsCommitted=0],streamStats=[io.airbyte.config.StreamSyncStats@183ab78f[streamName=issue_labels,stats=io.airbyte.config.SyncStats@4418ce88[recordsEmitted=9,bytesEmitted=2300,stateMessagesEmitted=<null>,recordsCommitted=<null>]]]],state=<null>,outputCatalog=io.airbyte.protocol.models.ConfiguredAirbyteCatalog@19fa13df[streams=[io.airbyte.protocol.models.ConfiguredAirbyteStream@1531e3a2[stream=io.airbyte.protocol.models.AirbyteStream@6f457245[name=issue_labels,jsonSchema={"type":"object","$schema":"http://json-schema.org/draft-07/schema#","properties":{"id":{"type":["null","integer"]},"url":{"type":["null","string"]},"name":{"type":["null","string"]},"color":{"type":["null","string"]},"default":{"type":["null","boolean"]},"node_id":{"type":["null","string"]},"repository":{"type":["string"]},"description":{"type":["null","string"]}}},supportedSyncModes=[full_refresh],sourceDefinedCursor=<null>,defaultCursorField=[],sourceDefinedPrimaryKey=[[id]],namespace=<null>,additionalProperties={}],syncMode=full_refresh,cursorField=[],destinationSyncMode=append,primaryKey=[[id]],additionalProperties={}]],additionalProperties={}],failures=[io.airbyte.config.FailureReason@2f5e41c9[failureOrigin=replication,failureType=<null>,internalMessage=java.lang.RuntimeException: java.lang.RuntimeException: Cannot find pod while trying to retrieve exit code. This probably means the Pod was not correctly created.,externalMessage=Something went wrong during replication,metadata=io.airbyte.config.Metadata@66f3cb16[additionalProperties={attemptNumber=0, jobId=29349}],stacktrace=java.util.concurrent.CompletionException: java.lang.RuntimeException: java.lang.RuntimeException: Cannot find pod while trying to retrieve exit code. This probably means the Pod was not correctly created.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1807)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: Cannot find pod while trying to retrieve exit code. This probably means the Pod was not correctly created.
+	at io.airbyte.workers.DefaultReplicationWorker.lambda$getDestinationOutputRunnable$6(DefaultReplicationWorker.java:366)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	... 3 more
+Caused by: java.lang.RuntimeException: Cannot find pod while trying to retrieve exit code. This probably means the Pod was not correctly created.
+	at io.airbyte.workers.process.KubePodProcess.getReturnCode(KubePodProcess.java:677)
+	at io.airbyte.workers.process.KubePodProcess.exitValue(KubePodProcess.java:704)
+	at java.base/java.lang.Process.hasExited(Process.java:584)
+	at java.base/java.lang.Process.isAlive(Process.java:574)
+	at io.airbyte.workers.protocols.airbyte.DefaultAirbyteDestination.isFinished(DefaultAirbyteDestination.java:146)
+	at io.airbyte.workers.DefaultReplicationWorker.lambda$getDestinationOutputRunnable$6(DefaultReplicationWorker.java:340)
+	... 4 more
+,retryable=<null>,timestamp=1652434504499]]]
+2022-05-13 09:35:04 [32mINFO[m i.a.w.t.TemporalUtils(withBackgroundHeartbeat):235 - Stopping temporal heartbeating...
+2022-05-13 09:34:30 [43mdestination[0m > SLF4J: Found binding in [jar:file:/airbyte/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+2022-05-13 09:34:30 [43mdestination[0m > SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+2022-05-13 09:34:30 [43mdestination[0m > SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2022-05-13 09:34:33 [43mdestination[0m > 2022-05-13 09:34:30 [32mINFO[m i.a.i.b.IntegrationCliParser(parseOptions):118 - integration args: {catalog=destination_catalog.json, write=null, config=destination_config.json}
+2022-05-13 09:34:33 [43mdestination[0m > 2022-05-13 09:34:30 [32mINFO[m i.a.i.b.IntegrationRunner(runInternal):105 - Running integration: io.airbyte.integrations.destination.s3.S3Destination
+2022-05-13 09:34:33 [43mdestination[0m > 2022-05-13 09:34:30 [32mINFO[m i.a.i.b.IntegrationRunner(runInternal):106 - Command: WRITE
+2022-05-13 09:34:33 [43mdestination[0m > 2022-05-13 09:34:30 [32mINFO[m i.a.i.b.IntegrationRunner(runInternal):107 - Integration config: IntegrationConfig{command=WRITE, configPath='destination_config.json', catalogPath='destination_catalog.json', statePath='null'}
+2022-05-13 09:34:33 [43mdestination[0m > 2022-05-13 09:34:30 [33mWARN[m c.n.s.JsonMetaSchema(newValidator):338 - Unknown keyword examples - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword
+2022-05-13 09:34:33 [43mdestination[0m > 2022-05-13 09:34:30 [33mWARN[m c.n.s.JsonMetaSchema(newValidator):338 - Unknown keyword airbyte_secret - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword
+2022-05-13 09:34:33 [43mdestination[0m > 2022-05-13 09:34:30 [32mINFO[m i.a.i.d.s.S3FormatConfigs(getS3FormatConfig):22 - S3 format config: {"flattening":"No flattening","format_type":"CSV","part_size_mb":5}
+2022-05-13 09:34:33 [44msource[0m > Starting syncing SourceGithub
+2022-05-13 09:34:33 [43mdestination[0m > 2022-05-13 09:34:31 [32mINFO[m i.a.i.d.s.c.S3CsvWriter(<init>):58 - Full S3 path for stream 'issue_labels': s3://redshift-dev-s3-bucket/testpath/issue_labels/2022_05_13_1652434471093_c217b62b-fa41-45ec-9b1a-8bfed67d62e3.csv
+2022-05-13 09:34:33 [43mdestination[0m > 2022-05-13 09:34:31 [32mINFO[m i.a.i.d.s.u.S3StreamTransferManagerHelper(getDefault):55 - PartSize arg is set to 5 MB
+2022-05-13 09:34:33 [43mdestination[0m > 2022-05-13 09:34:31 [32mINFO[m a.m.s.StreamTransferManager(getMultiPartOutputStreams):329 - Initiated multipart upload to redshift-dev-s3-bucket/testpath/issue_labels/2022_05_13_1652434471093_c217b62b-fa41-45ec-9b1a-8bfed67d62e3.csv with full ID OHXWuqZU_JlFtgmUu2fJ2qDVIyDPXtysRquyp9N7qwKXpKSZp0cs500fwRRfXorn8ZEjWCDSnRZlf3_.QBzPkVBcBIF.duDIvsypGsXCfpOqcexwkOjRKNRRjEoUslHH
+2022-05-13 09:34:33 [44msource[0m > Syncing stream: issue_labels 
+2022-05-13 09:34:33 [44msource[0m > Read 9 records from issue_labels stream
+2022-05-13 09:34:33 [44msource[0m > Finished syncing SourceGithub
+2022-05-13 09:34:33 [44msource[0m > SourceGithub runtimes:
+
+2022-05-13 09:34:33 [44msource[0m > Finished syncing SourceGithub
+2022-05-13 09:34:34 [43mdestination[0m > 2022-05-13 09:34:34 [32mINFO[m i.a.i.b.FailureTrackingAirbyteMessageConsumer(close):63 - Airbyte message consumer: succeeded.
+2022-05-13 09:34:34 [43mdestination[0m > 2022-05-13 09:34:34 [32mINFO[m i.a.i.d.s.w.BaseS3Writer(close):107 - Uploading remaining data for stream 'issue_labels'.
+2022-05-13 09:34:34 [43mdestination[0m > 2022-05-13 09:34:34 [32mINFO[m a.m.s.MultiPartOutputStream(close):158 - Called close() on [MultipartOutputStream for parts 1 - 10000]
+2022-05-13 09:34:34 [43mdestination[0m > 2022-05-13 09:34:34 [32mINFO[m a.m.s.MultiPartOutputStream(close):158 - Called close() on [MultipartOutputStream for parts 1 - 10000]
+2022-05-13 09:34:34 [43mdestination[0m > 2022-05-13 09:34:34 [33mWARN[m a.m.s.MultiPartOutputStream(close):160 - [MultipartOutputStream for parts 1 - 10000] is already closed
+2022-05-13 09:34:34 [43mdestination[0m > 2022-05-13 09:34:34 [32mINFO[m a.m.s.StreamTransferManager(complete):367 - [Manager uploading to redshift-dev-s3-bucket/testpath/issue_labels/2022_05_13_1652434471093_c217b62b-fa41-45ec-9b1a-8bfed67d62e3.csv with id OHXWuqZU_...RjEoUslHH]: Uploading leftover stream [Part number 1 containing 0.00 MB]
+2022-05-13 09:34:34 [43mdestination[0m > 2022-05-13 09:34:34 [32mINFO[m a.m.s.StreamTransferManager(uploadStreamPart):558 - [Manager uploading to redshift-dev-s3-bucket/testpath/issue_labels/2022_05_13_1652434471093_c217b62b-fa41-45ec-9b1a-8bfed67d62e3.csv with id OHXWuqZU_...RjEoUslHH]: Finished uploading [Part number 1 containing 0.00 MB]
+2022-05-13 09:34:34 [43mdestination[0m > 2022-05-13 09:34:34 [32mINFO[m a.m.s.StreamTransferManager(complete):395 - [Manager uploading to redshift-dev-s3-bucket/testpath/issue_labels/2022_05_13_1652434471093_c217b62b-fa41-45ec-9b1a-8bfed67d62e3.csv with id OHXWuqZU_...RjEoUslHH]: Completed
+2022-05-13 09:34:34 [43mdestination[0m > 2022-05-13 09:34:34 [32mINFO[m i.a.i.d.s.w.BaseS3Writer(close):109 - Upload completed for stream 'issue_labels'.
+2022-05-13 09:34:34 [43mdestination[0m > 2022-05-13 09:34:34 [32mINFO[m i.a.i.b.IntegrationRunner(runInternal):153 - Completed integration: io.airbyte.integrations.destination.s3.S3Destination
